@@ -1,0 +1,29 @@
+.Burger {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+
+  font-size: 20px;
+  color: rgb(24, 24, 24);
+
+  cursor: pointer;
+
+  transition: opacity, left, transform 0.2s ease-in;
+  z-index: 100;
+}
+
+.Burger:hover {
+  opacity: 0.7;
+}
+
+.Burger.open {
+  left: 320px;
+
+  color: rgb(255, 131, 183);
+}
+
+.Burger.open:hover {
+  transform: rotate(45deg);
+
+  opacity: 0.7;
+}

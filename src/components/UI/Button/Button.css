@@ -1,0 +1,56 @@
+.Button {
+  margin-right: 15px;
+  padding: 10px 20px;
+
+  display: inline-block;
+
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: transparent;
+
+  border: 1px solid #393845;
+  border-radius: 4px;
+}
+
+.Button:focus {
+  outline: none;
+}
+
+.Button:active {
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Button:disabled {
+  color: #393845;
+
+  opacity: 0.7;
+
+  cursor: not-allowed;
+}
+
+.success {
+  color: #fafdff;
+
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+
+  border: none;
+}
+
+.error {
+  color: #fafdff;
+
+  background: rgb(255, 37, 106);
+  background: linear-gradient(
+    8deg,
+    rgba(255, 37, 106, 1) 0%,
+    rgba(239, 112, 154, 1) 100%
+  );
+
+  border: none;
+}
+
+.primary {
+  color: #393845;
+}
