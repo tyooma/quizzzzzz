@@ -4,6 +4,13 @@
   display: flex;
   flex-grow: 1;
   justify-content: center;
+
+  background: rgb(161, 161, 161);
+  background: linear-gradient(
+    90deg,
+    rgba(161, 161, 161, 0.3626401244091386) 0%,
+    rgba(249, 255, 255, 0.34583340172006305) 6%
+  );
 }
 
 .QuizCreator > div {
@@ -21,18 +28,28 @@
 .QuizCreator hr {
   padding: 8px;
 
-  background: rgb(255, 213, 235);
+  /* background: rgb(255, 213, 235); */
   background: linear-gradient(
     90deg,
     rgba(255, 213, 235, 1) 0%,
-    rgba(243, 222, 255, 1) 16%,
-    rgba(213, 213, 255, 1) 33%,
-    rgba(202, 247, 255, 1) 49%,
-    rgba(219, 255, 234, 1) 64%,
-    rgba(252, 255, 221, 1) 79%,
-    rgba(255, 243, 226, 1) 90%,
+    rgba(243, 222, 255, 1) 5%,
+    rgba(213, 213, 255, 1) 10%,
+    rgba(202, 247, 255, 1) 16%,
+    rgba(219, 255, 234, 1) 23%,
+    rgba(252, 255, 221, 1) 31%,
+    rgba(255, 243, 226, 1) 39%,
+    rgba(255, 222, 222, 1) 46%,
+    rgba(255, 213, 235, 1) 54%,
+    rgba(243, 222, 255, 1) 61%,
+    rgba(213, 213, 255, 1) 68%,
+    rgba(202, 247, 255, 1) 75%,
+    rgba(219, 255, 234, 1) 81%,
+    rgba(252, 255, 221, 1) 88%,
+    rgba(255, 243, 226, 1) 94%,
     rgba(255, 222, 222, 1) 100%
   );
+  background-size: 200% 100%;
+  animation: rainbow 30s ease infinite;
 
   border: none;
 }
@@ -42,4 +59,16 @@
 
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
 }

@@ -17,8 +17,16 @@
 
   display: block;
 
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+
+  appearance: none;
+  background-color: transparent;
+
   box-sizing: border-box;
-  border: 1px solid #000;
+  border: none;
   outline: none;
 
   transition: all 0.3s ease-in-out;
